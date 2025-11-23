@@ -338,9 +338,11 @@ footer a {
 @media (max-width: 700px) {
   .hero {
     flex-direction: column-reverse;
+    /* keep default align for layout */
     align-items: flex-start;
   }
 
+  /* Center ONLY the top profile image */
   .hero-photo {
     width: 100%;
     display: flex;
@@ -352,8 +354,9 @@ footer a {
     display: block;
   }
 
-    /* Center text under the photo */
+  /* Center name + intro text */
   .hero-main {
+    width: 100%;
     text-align: center;
   }
 
@@ -361,10 +364,10 @@ footer a {
     text-align: center;
   }
 
-  .hero-links {
-    text-align: center;
-  }
+  /* REMOVE this line entirely:
+     .hero-links { text-align: left; } */
 
+  /* Keep publications responsive */
   .pub-card {
     flex-direction: column;
   }
@@ -373,8 +376,41 @@ footer a {
     width: 100%;
     max-width: 260px;
   }
+}
 
-  .hero-links {
-    text-align: left;
+/* ===== Dark Mode ===== */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ddd;
+  }
+
+  a {
+    color: #4ea1ff;
+  }
+
+  a:hover {
+    color: #f09228;
+  }
+
+  .pub-card {
+    border-bottom: 1px solid #333333;
+  }
+
+  .pub-title {
+    color: #79b8ff;
+  }
+
+  .pub-meta {
+    color: #82aaff;
+  }
+
+  footer {
+    color: #555;
+  }
+
+  footer a {
+    color: #888;
   }
 }
