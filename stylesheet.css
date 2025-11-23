@@ -203,11 +203,11 @@ name {
 .hero-links {
   text-align: center;
   margin-top: 10px;
-  font-size: 0.95rem;
+  font-size: 1.4rem;
 }
 
 .hero-links a {
-  margin: 0 3px;
+  margin: 0 0px;
   white-space: nowrap;
 }
 
@@ -256,7 +256,7 @@ heading {
 .pub-image {
   width: 170px;
   object-fit: cover;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   flex-shrink: 0;
 }
 
@@ -344,6 +344,7 @@ footer a {
 
   /* Center ONLY the top profile image */
   .hero-photo {
+    align-self: center;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -382,7 +383,7 @@ footer a {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #121212;
+    background-color: #28282b;
     color: #ddd;
   }
 
@@ -403,8 +404,37 @@ footer a {
   }
 
   .pub-meta {
-    color: #82aaff;
+    color: #aec2ed;
   }
+
+  .pub-authors {
+    color: #ccc;
+  }
+
+  .pub-authors strong {
+  color: #ffffff;
+  }
+
+  .pub-desc {
+    color: #ccc;
+  }
+
+  .pub-links a {
+    color: #90baea;
+  }
+
+  .pub-links a:hover {
+  text-decoration: underline;
+  color: #f09228;
+ }
+
+  name {
+    color: #ffffff;
+  }
+
+  heading {
+  color: #e7eaee;
+}
 
   footer {
     color: #555;
