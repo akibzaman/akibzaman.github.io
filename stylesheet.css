@@ -342,7 +342,27 @@ footer a {
   }
 
   .hero-photo {
-    max-width: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-photo img {
+    margin: 0 auto;
+    display: block;
+  }
+
+    /* Center text under the photo */
+  .hero-main {
+    text-align: center;
+  }
+
+  .hero-text p {
+    text-align: center;
+  }
+
+  .hero-links {
+    text-align: center;
   }
 
   .pub-card {
